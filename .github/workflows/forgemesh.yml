@@ -1,0 +1,33 @@
+# Caller workflow installed in every swarm repository.
+name: forgemesh
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_target:          # metadata only: never checks out or runs PR code
+    types: [closed, synchronize]
+  schedule:
+    - cron: "*/30 * * * *"      # reconciliation: expiries, lost or cancelled runs
+  workflow_dispatch:
+    inputs:
+      full-scan:
+        type: boolean
+        default: false
+
+permissions: {}
+
+concurrency:                     # optimisation only; correctness relies on Git compare-and-swap
+  group: forgemesh-coordinator
+  cancel-in-progress: false
+
+jobs:
+  coordinate:
+    if: github.event_name != 'issue_comment' || contains(github.event.comment.body, '/fm ')
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: read
+    uses: ForgeMesh-io/nexus/.github/workflows/coordinator.yml@583642ca1fd7523608684e20738a20499f5d259f
+    with:
+      nexus-ref: 583642ca1fd7523608684e20738a20499f5d259f
+      full-scan: ${{ github.event_name == 'schedule' || inputs.full-scan == true }}

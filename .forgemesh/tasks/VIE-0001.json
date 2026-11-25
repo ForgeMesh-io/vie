@@ -1,0 +1,23 @@
+{
+  "id": "VIE-0001",
+  "swarm": "vie",
+  "title": "Confirm TomBox licensing",
+  "objective": "Confirm TomBox licensing (follow-up 1 of research/MATRIX.md section 5).",
+  "type": "research",
+  "priority": 0,
+  "risk": "low",
+  "components": [
+    "research"
+  ],
+  "files": [
+    "research/findings/VIE-0001.md"
+  ],
+  "hardware": [],
+  "acceptance": [
+    "A LICENSE file exists in drycheetah84/TomBox, or a written statement from its authors licenses `tombox-xshader` under MIT OR Apache-2.0",
+    "Linked in VIE THIRD_PARTY.md",
+    "Findings written to research/findings/VIE-0001.md with sources; no copyrighted or proprietary material committed"
+  ],
+  "execution": "none",
+  "profile": "research"
+}

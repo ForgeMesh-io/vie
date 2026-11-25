@@ -1,0 +1,28 @@
+{
+  "id": "VIE-0010",
+  "swarm": "vie",
+  "title": "D3D12.X \u2192 Vulkan direct vs via vkd3d-proton",
+  "objective": "D3D12.X \u2192 Vulkan direct vs via vkd3d-proton (follow-up 10 of research/MATRIX.md section 5).",
+  "type": "research",
+  "priority": 3,
+  "risk": "low",
+  "components": [
+    "research"
+  ],
+  "files": [
+    "research/findings/VIE-0010.md"
+  ],
+  "hardware": [
+    "os:linux",
+    "gpu:vulkan"
+  ],
+  "acceptance": [
+    "Written decision record comparing frame time and shader-compile time on one GDK sample through both paths, measured on one RDNA2 GPU",
+    "Findings written to research/findings/VIE-0010.md with sources; no copyrighted or proprietary material committed"
+  ],
+  "execution": "container",
+  "profile": "gpu",
+  "depends_on": [
+    "VIE-0006"
+  ]
+}

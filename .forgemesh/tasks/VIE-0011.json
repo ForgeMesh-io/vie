@@ -1,0 +1,23 @@
+{
+  "id": "VIE-0011",
+  "swarm": "vie",
+  "title": "Check AMD machine-readable ISA license and coverage",
+  "objective": "Check AMD machine-readable ISA license and coverage (follow-up 11 of research/MATRIX.md section 5).",
+  "type": "research",
+  "priority": 1,
+  "risk": "low",
+  "components": [
+    "research"
+  ],
+  "files": [
+    "research/findings/VIE-0011.md"
+  ],
+  "hardware": [],
+  "acceptance": [
+    "Upstream URL, license text and GFX10.3 XML file identified",
+    "Opcode count compared with TuxBox decoder table (diff list attached)",
+    "Findings written to research/findings/VIE-0011.md with sources; no copyrighted or proprietary material committed"
+  ],
+  "execution": "none",
+  "profile": "research"
+}

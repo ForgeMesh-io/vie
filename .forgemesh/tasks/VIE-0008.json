@@ -1,0 +1,23 @@
+{
+  "id": "VIE-0008",
+  "swarm": "vie",
+  "title": "Independent verification of headline claims",
+  "objective": "Independent verification of headline claims (follow-up 8 of research/MATRIX.md section 5).",
+  "type": "challenger",
+  "priority": 1,
+  "risk": "low",
+  "components": [
+    "research"
+  ],
+  "files": [
+    "research/findings/VIE-0008.md"
+  ],
+  "hardware": [],
+  "acceptance": [
+    "For TuxBox, XCL, VIctory and OCE: each README claim mapped to evidence that can be checked (log, video, evidence JSON, issue)",
+    "Claims without evidence marked \"unverified\" in repos.json",
+    "Findings written to research/findings/VIE-0008.md with sources; no copyrighted or proprietary material committed"
+  ],
+  "execution": "none",
+  "profile": "research"
+}

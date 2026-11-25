@@ -1,0 +1,37 @@
+{
+  "swarm": "vie",
+  "maintainers": [
+    "FRGMesh"
+  ],
+  "trusted_validators": [],
+  "paused": false,
+  "lease_hours": 24,
+  "max_renewals": 6,
+  "max_active_claims_per_user": 1,
+  "wip_limit_per_component": 2,
+  "required_passes": {
+    "low": 1,
+    "medium": 2,
+    "high": 2,
+    "critical": 3
+  },
+  "maintainer_approval_from": "medium",
+  "trusted_vote_from": "high",
+  "auto_merge_max_risk": "none",
+  "protected_paths": [
+    ".forgemesh/**",
+    ".github/**",
+    "CODEOWNERS",
+    "AGENTS.md",
+    "LEGAL.md",
+    "research/MATRIX.md",
+    "research/repos.json"
+  ],
+  "validation_pressure": {
+    "low_queue": 3,
+    "high_queue": 10,
+    "dev_share_low": 0.7,
+    "dev_share_mid": 0.35,
+    "dev_share_high": 0.05
+  }
+}

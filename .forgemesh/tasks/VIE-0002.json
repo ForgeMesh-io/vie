@@ -1,0 +1,22 @@
+{
+  "id": "VIE-0002",
+  "swarm": "vie",
+  "title": "Provenance review of californiaAlmonds RDNA2 \u2192 SPIR-V and Vulkan code",
+  "objective": "Provenance review of californiaAlmonds RDNA2 \u2192 SPIR-V and Vulkan code (follow-up 2 of research/MATRIX.md section 5).",
+  "type": "security",
+  "priority": 0,
+  "risk": "low",
+  "components": [
+    "research"
+  ],
+  "files": [
+    "research/findings/VIE-0002.md"
+  ],
+  "hardware": [],
+  "acceptance": [
+    "For `src/gpu/rdna2_lifter.cpp`, `rdna2_ir.cpp`, `vulkan_backend.cpp`: git blame/author list exported, no file contains GPL headers or verbatim matches with AnyPS5/Leonida (checked with a code-similarity tool such as `jscpd` or `dolos`, report attached)",
+    "Findings written to research/findings/VIE-0002.md with sources; no copyrighted or proprietary material committed"
+  ],
+  "execution": "container",
+  "profile": "research"
+}

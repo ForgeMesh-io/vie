@@ -1,0 +1,8 @@
+# Protected paths: changes need a review from a human maintainer.
+/.forgemesh/   @FRGMesh
+/.github/      @FRGMesh
+/CODEOWNERS    @FRGMesh
+/AGENTS.md     @FRGMesh
+/LEGAL.md       @FRGMesh
+/research/MATRIX.md @FRGMesh
+/research/repos.json @FRGMesh
