@@ -1,5 +1,5 @@
 {
- "clock": "2026-11-25T13:07:24Z",
+ "clock": "2026-11-25T13:08:51Z",
  "paused": false,
  "tasks": {
   "VIE-0001": {
@@ -82,14 +82,21 @@
   },
   "VIE-0007": {
    "approval": null,
-   "attempts": [],
+   "attempts": [
+    {
+     "actor": "FRGMesh",
+     "from": "2026-11-25T13:08:35Z",
+     "outcome": null,
+     "to": null
+    }
+   ],
    "block_reason": null,
-   "claimant": null,
-   "display_status": "AVAILABLE",
+   "claimant": "FRGMesh",
+   "display_status": "CLAIMED",
    "id": "VIE-0007",
-   "lease_expires": null,
+   "lease_expires": "2026-11-26T13:08:35Z",
    "renewals": 0,
-   "status": "AVAILABLE",
+   "status": "CLAIMED",
    "submission": null,
    "votes": {}
   },
