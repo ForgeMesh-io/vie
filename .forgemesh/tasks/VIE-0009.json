@@ -13,7 +13,8 @@
     "research/findings/VIE-0009.md"
   ],
   "hardware": [
-    "os:linux"
+    "os:linux",
+    "resource:owned-game-dump"
   ],
   "acceptance": [
     "List of non-baseline x86-64 instructions in the title executable (static scan of the user's own copy, run locally)",
