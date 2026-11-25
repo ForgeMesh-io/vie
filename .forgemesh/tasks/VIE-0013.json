@@ -1,0 +1,18 @@
+{
+  "id": "VIE-0013",
+  "swarm": "vie",
+  "title": "Document the Windows x64 baseline checks",
+  "objective": "Map XCL's existing build and tests to the results needed to keep Windows x64 working through the port. Review source and public CI only; do not run a game or candidate code.",
+  "type": "documentation",
+  "priority": 1,
+  "risk": "low",
+  "components": ["windows"],
+  "files": ["docs/vie-windows-baseline.md"],
+  "execution": "none",
+  "profile": "research",
+  "acceptance": [
+    "Cite the exact base revision, public Windows CI and the synthetic title tests",
+    "Separate hosted tests, skipped GPU or optional tests, and the evidence needed to show a visible frame on physical hardware",
+    "Do not treat upstream results or an untested title as VIE compatibility evidence"
+  ]
+}

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: VIE coordination
+    url: https://github.com/ForgeMesh-io/vie/issues/1
+    about: Find the current porting tasks and existing work.
+  - name: Security vulnerability
+    url: https://github.com/ForgeMesh-io/vie/security/advisories/new
+    about: Report privately. Never include game files or raw logs.

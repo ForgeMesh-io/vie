@@ -4,5 +4,7 @@
 /CODEOWNERS    @FRGMesh
 /AGENTS.md     @FRGMesh
 /LEGAL.md       @FRGMesh
+/LICENSE        @FRGMesh
+/THIRD_PARTY.md  @FRGMesh
 /research/MATRIX.md @FRGMesh
 /research/repos.json @FRGMesh

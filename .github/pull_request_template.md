@@ -1,21 +1,10 @@
-<!-- Title: <TASK-ID>: <imperative summary> -->
-
-**Task:** <!-- e.g. NX-0001 -->
-**Base commit:** <!-- SHA -->
+**Task or issue:**
 
 ## What changed
 
-## How it was tested
-<!-- Exact commands, image digest, OS/CPU/GPU. "Not run" is acceptable; invented results are not. -->
+## Evidence
+<!-- Exact SHA, OS/architecture, commands, results and skipped checks. Do not attach raw logs or game files. -->
 
-## Results
-<!-- Before/after numbers when relevant. Attach or link the attestation. -->
+## Not tested
 
-## Known limitations
-
-## Provenance
-- Third-party code added (source, licence):
-- AI assistance (agent and model):
-
-- [ ] Stays inside the task's scope
-- [ ] Does not touch protected paths (or the task is explicitly about them)
+## Provenance and AI assistance

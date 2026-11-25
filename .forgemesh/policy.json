@@ -24,6 +24,8 @@
     "CODEOWNERS",
     "AGENTS.md",
     "LEGAL.md",
+    "LICENSE",
+    "THIRD_PARTY.md",
     "research/MATRIX.md",
     "research/repos.json"
   ],
