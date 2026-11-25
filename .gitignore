@@ -1,5 +1,8 @@
 /target
 /.venv/
+.env
+*.pem
+*.key
 
 # Game data never goes into the repository (CONTRIBUTING.md, "Licence and provenance"): game
 # packages and archives, console executables and libraries, video, audio banks, textures, dumps.
@@ -28,6 +31,7 @@
 *.sys
 *.dmp
 *.mdmp
+*.bin
 *.iso
 *.pkg
 *.xsp
@@ -36,6 +40,7 @@ MicrosoftGame.config
 appxmanifest.xml
 resources.pri
 !tests/data/testgame/MicrosoftGame.config
+!tests/data/testgame/data/sub/nested.bin
 
 # XCL's run output (logs, reports, frame dumps, shader dumps)
 *.log
