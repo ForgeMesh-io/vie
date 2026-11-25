@@ -1,0 +1,18 @@
+{
+  "id": "VIE-0014",
+  "swarm": "vie",
+  "title": "Find the smallest native Linux x64 loader milestone",
+  "objective": "Trace the Windows host dependencies of the XCL loader from source. Propose the smallest independently testable change toward launching a synthetic title in a native Linux process without Wine or Proton.",
+  "type": "research",
+  "priority": 1,
+  "risk": "low",
+  "components": ["linux"],
+  "files": ["docs/vie-linux-loader.md"],
+  "execution": "none",
+  "profile": "research",
+  "acceptance": [
+    "Cite concrete source paths at the base revision and distinguish OS services from the x86-64 guest ABI",
+    "Describe one synthetic pass/fail test that needs no console SDK or game data",
+    "State how the first change preserves the Windows path and what it will not prove about graphics or games"
+  ]
+}

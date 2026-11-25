@@ -1,5 +1,7 @@
 # VIE research matrix: Xbox Series X|S compatibility layers and recompilers
 
+> Historical audit from the former research project, published under its [original Apache-2.0 licence](https://github.com/ForgeMesh-io/vie/blob/a5e8a5b312e5a2a607dfdc171922d73b891b813b/LICENSE). Its recommendations do not govern the XCL fork; see [LEGAL.md](../LEGAL.md) and [ROADMAP.md](../ROADMAP.md).
+
 Audited: 2026-11-25. Read-only audit through the GitHub REST API (`gh api`, account FRGMesh) and the freedesktop GitLab API. No binary was downloaded or run. Per-repo details and sources are in [`repos.json`](repos.json).
 
 **Reading rules**

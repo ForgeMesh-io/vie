@@ -1,0 +1,18 @@
+{
+  "id": "VIE-0015",
+  "swarm": "vie",
+  "title": "Map native macOS feasibility on Intel and Apple Silicon",
+  "objective": "Use XCL source and public Apple documentation to map the loader, ABI, executable-memory and graphics constraints. Propose the smallest synthetic milestone for a native macOS host.",
+  "type": "research",
+  "priority": 1,
+  "risk": "low",
+  "components": ["macos"],
+  "files": ["docs/vie-macos-feasibility.md"],
+  "execution": "none",
+  "profile": "research",
+  "acceptance": [
+    "Distinguish an Intel macOS process executing x86-64 code from an arm64 macOS process that needs guest CPU translation",
+    "Record known constraints and unresolved questions with source links; do not claim support for either configuration",
+    "Specify a synthetic host test and separate what it proves from a future graphics or retail test"
+  ]
+}

@@ -1,27 +1,7 @@
 # VIE roadmap
 
-Milestones are reached only with evidence (see LEGAL.md rule 6).
+1. **Windows x86-64 baseline — VIE-0013.** Preserve XCL's Windows build and tests. Establish exact-SHA evidence for a self-built title, including launch and the first rendered frame on a capable GPU. Keep GPU and game tests distinct from hosted CI.
+2. **Linux x86-64 — VIE-0014.** Separate shared Rust runtime code from Win32 host services. Plan a native loader and a graphics backend, with Vulkan as a candidate. First prove native process startup with a synthetic title, then render a frame without Wine or Proton.
+3. **macOS — VIE-0015.** Measure the loader, ABI, memory, and graphics constraints for Intel and Apple Silicon separately. Consider Metal for graphics. An arm64 host binary is native to Apple Silicon; an x86-64 game running via translation is not direct native game execution. Prove startup and a rendered frame on each supported host separately.
 
-## M0 — Research campaign (current)
-
-- [x] Audit of existing projects and licences (`research/MATRIX.md`)
-- [ ] Licence and provenance questions resolved (VIE-0001, VIE-0002, VIE-0011)
-- [ ] Headline claims of existing projects mapped to evidence (VIE-0008)
-- [ ] Build-only reproduction of the most reusable permissive project (VIE-0003)
-- [ ] Hardware feasibility on Polaris and RDNA2 (VIE-0005, VIE-0006)
-
-## M1 — Architecture decision
-
-- [ ] Decision record: runtime host, graphics path (via vkd3d-proton first or direct Vulkan), shader pipeline (VIE-0010)
-- [ ] `THIRD_PARTY.md` and repository layout
-- [ ] Test harness with a homebrew/self-built sample only
-
-## M2 — First frame
-
-- [ ] Homebrew sample presents a frame through VIE on an RDNA2 GPU, in CI where possible
-- [ ] RDNA2 → SPIR-V translation validated by `spirv-val` and a CPU reference interpreter
-
-## M3 — Broader compatibility
-
-- [ ] Milestones per title tracked as boot → menus → in-game → playable, with fps on named hardware
-- [ ] Polaris (gfx803) fallbacks: mesh shaders through compute, ray tracing disabled or emulated
+Keep the imported Windows path working as ports land. Before calling a game playable on a platform, record the VIE commit, host/CPU/GPU category, and observed progression (boot, menus, in-game, playable). A synthetic title does not establish retail compatibility.
