@@ -27,7 +27,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: read
-    uses: ForgeMesh-io/nexus/.github/workflows/coordinator.yml@583642ca1fd7523608684e20738a20499f5d259f
+    uses: ForgeMesh-io/nexus/.github/workflows/coordinator.yml@8f0500ee5bb4e3be6b95de30f950dad024cdba44
     with:
-      nexus-ref: 583642ca1fd7523608684e20738a20499f5d259f
+      nexus-ref: 8f0500ee5bb4e3be6b95de30f950dad024cdba44
       full-scan: ${{ github.event_name == 'schedule' || inputs.full-scan == true }}
